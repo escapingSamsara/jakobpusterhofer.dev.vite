@@ -1,0 +1,15 @@
+.work-section {
+  z-index: 3;
+  /* background: rgb(219, 157, 157); */
+}
+.work-container {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.work-box {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}

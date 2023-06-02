@@ -1,0 +1,17 @@
+.hero-section {
+  padding-bottom: 2vh;
+}
+.hero-container {
+  height: 100%;
+  width: 100%;
+}
+.hero-box {
+  height: 100%;
+  width: 100%;
+}
+#canvas-name-header {
+  height: 90vh;
+  width: 100vw;
+  z-index: 2;
+  box-shadow: 1px 1px 1px transparent;
+}
