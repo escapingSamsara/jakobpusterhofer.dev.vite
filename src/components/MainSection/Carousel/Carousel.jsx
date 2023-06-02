@@ -11,20 +11,28 @@ import './Carousel.css'
 const Carousel = ({ theme }) => {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
+    speed: 500,
+    mobileFirst: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    // responsive: [
-    //   {
-    //     breakpoint: 500, // Screen width at which the settings will change
-    //     settings: {
-    //       slidesToShow: 1, // Number of slides to show at this breakpoint
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 786,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   }
   return (
     <div className={`carousel-container ${theme}`}>

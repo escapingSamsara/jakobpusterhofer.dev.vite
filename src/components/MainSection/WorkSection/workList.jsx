@@ -1,9 +1,3 @@
-import clarityUIImage from '../../../../src/assets/workListImages/clarityUI.png'
-import cloudstashImage from '../../../../src/assets/workListImages/cloudstash.png'
-import geldmussmanImage from '../../../../src/assets/workListImages/geldmussman.png'
-import loremPixumImage from '../../../../src/assets/workListImages/lor3mPixum.png'
-import todoOrnNotTodoImage from '../../../../src/assets/workListImages/todoOrNotTodo.png'
-
 export const workList = [
   {
     id: 1,
