@@ -10,9 +10,10 @@ import { workList } from '../WorkSection/workList'
 import './Carousel.css'
 const Carousel = ({ theme }) => {
   const settings = {
-    dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
     mobileFirst: true,
     slidesToShow: 4,
     slidesToScroll: 1,
