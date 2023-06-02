@@ -6,7 +6,7 @@ export const workList = [
     description: 'finance tracker app',
     tech: 'react.js, node.js, express.js, mongoDB',
     code: 'https://github.com/escapingSamsara/financeApp-Project-Github',
-    image: '../../../../workListImages/geldmussman.png',
+    image: '../../../../public/workListImages/geldmussman.png',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const workList = [
     description: 'design blog landing page',
     tech: 'react.js',
     code: 'https://github.com/escapingSamsara/ClarityUI_concept',
-    image: '../../../../workListImages/clarityUI.png',
+    image: '../../../../public/workListImages/clarityUI.png',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const workList = [
     description: 'crypto wallet landing page',
     tech: 'react.js',
     code: '#',
-    image: '../../../../workListImages/cloudstash.png',
+    image: '../../../../public/workListImages/cloudstash.png',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const workList = [
     description: 'crypto wallet landing page',
     tech: 'react.js',
     code: 'https://github.com/escapingSamsara/lor3mPixum',
-    image: '../../../../workListImages/lor3mPixum.png',
+    image: '../../../../public/workListImages/lor3mPixum.png',
   },
   {
     id: 5,
@@ -42,6 +42,6 @@ export const workList = [
     description: 'todo list widget for aesthetes',
     tech: 'react.js',
     code: 'https://github.com/escapingSamsara/TodoList_Widget',
-    image: '../../../../workListImages/todoOrNotTodo.png',
+    image: '../../../../public/workListImages/todoOrNotTodo.png',
   },
 ]
