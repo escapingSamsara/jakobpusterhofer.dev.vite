@@ -1,3 +1,9 @@
+import clarityUIImage from '../../../../src/assets/workListImages/clarityUI.png'
+import cloudstashImage from '../../../../src/assets/workListImages/cloudstash.png'
+import geldmussmanImage from '../../../../src/assets/workListImages/geldmussman.png'
+import loremPixumImage from '../../../../src/assets/workListImages/lor3mPixum.png'
+import todoOrnNotTodoImage from '../../../../src/assets/workListImages/todoOrNotTodo.png'
+
 export const workList = [
   {
     id: 1,
@@ -6,7 +12,7 @@ export const workList = [
     description: 'finance tracker app',
     tech: 'react.js, node.js, express.js, mongoDB',
     code: 'https://github.com/escapingSamsara/financeApp-Project-Github',
-    image: '.geldmussman.png',
+    image: '../../../../src/assets/workListImages/geldmussman.png',
   },
   {
     id: 2,
@@ -15,7 +21,7 @@ export const workList = [
     description: 'design blog landing page',
     tech: 'react.js',
     code: 'https://github.com/escapingSamsara/ClarityUI_concept',
-    image: './clarityUI.png',
+    image: '../../../../src/assets/workListImages/clarityUI.png',
   },
   {
     id: 3,
@@ -24,7 +30,7 @@ export const workList = [
     description: 'crypto wallet landing page',
     tech: 'react.js',
     code: '#',
-    image: './cloudstash.png',
+    image: '../../../../src/assets/workListImages/cloudstash.png',
   },
   {
     id: 4,
@@ -33,7 +39,7 @@ export const workList = [
     description: 'crypto wallet landing page',
     tech: 'react.js',
     code: 'https://github.com/escapingSamsara/lor3mPixum',
-    image: './lor3mPixum.png',
+    image: '../../../../src/assets/workListImages/lor3mPixum.png',
   },
   {
     id: 5,
@@ -42,6 +48,6 @@ export const workList = [
     description: 'todo list widget for aesthetes',
     tech: 'react.js',
     code: 'https://github.com/escapingSamsara/TodoList_Widget',
-    image: './todoOrNotTodo.png',
+    image: '../../../../src/assets/workListImages/todoOrNotTodo.png',
   },
 ]
