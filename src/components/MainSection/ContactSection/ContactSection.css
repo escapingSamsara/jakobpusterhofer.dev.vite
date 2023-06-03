@@ -26,12 +26,12 @@
   width: 380px;
   max-width: 50vw;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  padding-top: 15vh;
 }
 .textfield {
-  margin: 0.25rem 0 1rem;
-  padding: 0.25rem 0.5rem;
+  margin: 0.75rem 0 1rem;
+  padding: 0.35rem 0.5rem;
   font-size: 1rem;
   border: none;
   height: 2rem;
@@ -43,17 +43,19 @@
 
 .form-send-btn {
   width: 100px;
-  margin: 0 auto;
-  padding: 0.5rem 0.45rem;
+  margin: 1rem auto;
+  padding: 0.75rem 0;
   font-weight: bold;
   border: none;
+  font-size: 1rem;
   outline: none;
-  border-radius: 5px;
+  border-radius: 7.5px;
   transition: all 0.2s ease-in-out;
 }
 .form-send-btn:hover {
   transition: all 0.2s ease-in-out;
   background-color: #00adb5;
+  color: white;
 }
 .form-send-btn.dark {
   background-color: #282828;
@@ -61,7 +63,6 @@
 }
 .form-send-btn.dark:hover {
   transition: all 0.2s ease-in-out;
-
   background-color: #00adb5;
 }
 input {
