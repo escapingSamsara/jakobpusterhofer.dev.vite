@@ -15,6 +15,7 @@
 }
 
 .about-box p {
+  line-height: 2rem;
   height: 30vw;
   padding: 1rem;
   margin: auto;
@@ -25,13 +26,13 @@
 }
 @media screen and (max-width: 600px) {
   .about-box p {
+    line-height: 1.55rem;
     font-size: 1.15rem;
     padding: 0rem;
     margin: 10vh 0;
   }
   .about-box {
     height: 50%;
-    border: 1px solid rgb(237, 2, 2);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -99,7 +100,7 @@
 }
 @media screen and (min-width: 1200px) {
   .about-box p {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
   }
   .about-box {
     height: 50%;
