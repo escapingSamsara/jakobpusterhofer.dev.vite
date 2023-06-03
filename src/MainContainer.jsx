@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './App.css'
 import AboutSection from './components/MainSection/AboutSection/AboutSection'
-// import ContactSection from './components/MainSection/ContactSection/ContactSection'
+import ContactSection from './components/MainSection/ContactSection/ContactSection'
 import HeroSection from './components/MainSection/HeroSection/HeroSection'
 import WorkSection from './components/MainSection/WorkSection/WorkSection'
 import Navbar from './components/Navbar/Navbar'
@@ -31,7 +31,7 @@ export default function MainContainer({ theme, toggleTheme }) {
         scrollTrigger: {
           trigger: slider.current,
           pin: true,
-          scrub: 1,
+          scrub: 0.5,
           snap: snapValues,
           end: () => '+=' + slider.current.offsetWidth,
           // markers: true,
@@ -92,13 +92,13 @@ export default function MainContainer({ theme, toggleTheme }) {
             </div>
             <div className="section-header-box">Work</div>
           </div>
-          {/* <div className="panel  section-container">
+          <div className="panel  section-container">
             {' '}
             <div className="section-content">
               <ContactSection theme={theme} />
             </div>
             <div className="section-header-box">Contact</div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

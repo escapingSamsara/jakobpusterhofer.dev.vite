@@ -8,9 +8,9 @@ import './Carousel.css'
 const Carousel = ({ theme }) => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 2500,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     mobileFirst: true,
     slidesToShow: 4,
     slidesToScroll: 1,

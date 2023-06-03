@@ -1,2 +1,77 @@
 .contact-section {
 }
+
+.contact-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.contact-box {
+  height: 100%;
+  width: 100%;
+}
+.contact-form-box {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  z-index: 20;
+  height: 100%;
+  min-width: 300px;
+  width: 380px;
+  max-width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.textfield {
+  margin: 0.25rem 0 1rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  border: none;
+  height: 2rem;
+  border-radius: 5px;
+}
+.recaptcha {
+  z-index: 20;
+}
+
+.form-send-btn {
+  width: 100px;
+  margin: 0 auto;
+  padding: 0.5rem 0.45rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.form-send-btn:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #00adb5;
+}
+.form-send-btn.dark {
+  background-color: #282828;
+  transition: all 0.2s ease-in-out;
+}
+.form-send-btn.dark:hover {
+  transition: all 0.2s ease-in-out;
+
+  background-color: #00adb5;
+}
+input {
+  border-radius: 5px;
+}
+.textfield.dark {
+  background-color: #dcdcdc;
+  color: black;
+  font-weight: bold;
+}
+.textfield.light {
+  background-color: #ffffff;
+}
