@@ -57,7 +57,7 @@ window.addEventListener('load', function () {
       this.maxTextWidth = this.canvasWidth * 0.6
       if (canvasNameHeader.clientWidth >= canvasNameHeader.clientHeight) {
         this.fontSize =
-          (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 40
+          (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 35
       } else if (canvasNameHeader.clientHeight > canvasNameHeader.clientWidth) {
         this.fontSize =
           (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 45
@@ -65,7 +65,7 @@ window.addEventListener('load', function () {
       console.log(this.fontSize)
       this.lineHeight = this.fontSize * 1.15
       this.textInput = document.getElementById('canvas-name-header')
-      this.verticalOffset = 120
+      this.verticalOffset = 240
       this.textInput.addEventListener('keyup', (e) => {
         if (e.key !== ' ') {
           this.context.clearRect(0, 0, this.canvasWidth, this.canvasHeight)
@@ -113,7 +113,7 @@ window.addEventListener('load', function () {
         this.context.fontStyle +
         this.context.fontWeight +
         this.fontSize +
-        'px Playfair Display'
+        'px system-ui'
       // break multiline text
       let linesArray = []
       let words = text.split('\n')

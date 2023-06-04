@@ -72,8 +72,8 @@ export default function MainContainer({ theme, toggleTheme }) {
           <Navbar toggleTheme={toggleTheme} theme={theme} />
         </div>
         <div ref={slider} className="container">
-          <div className="panel  section-container">
-            <div className="section-content">
+          <div className="panel  section-container ">
+            <div className="section-content hero-section-container">
               <HeroSection theme={theme} />
             </div>
           </div>
