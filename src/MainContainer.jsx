@@ -89,7 +89,7 @@ export default function MainContainer({ theme, toggleTheme }) {
             <div className="section-content">
               <WorkSection theme={theme} />
             </div>
-            <div className="section-header-box">Work</div>
+            <div className="section-header-box work-header-box">Work</div>
           </div>
           <div className="panel  section-container">
             {' '}

@@ -57,15 +57,15 @@ window.addEventListener('load', function () {
       this.maxTextWidth = this.canvasWidth * 0.6
       if (canvasNameHeader.clientWidth >= canvasNameHeader.clientHeight) {
         this.fontSize =
-          (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 35
+          (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 50
       } else if (canvasNameHeader.clientHeight > canvasNameHeader.clientWidth) {
         this.fontSize =
-          (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 45
+          (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 70
       }
       console.log(this.fontSize)
       this.lineHeight = this.fontSize * 1.15
       this.textInput = document.getElementById('canvas-name-header')
-      this.verticalOffset = 240
+      this.verticalOffset = 220
       this.textInput.addEventListener('keyup', (e) => {
         if (e.key !== ' ') {
           this.context.clearRect(0, 0, this.canvasWidth, this.canvasHeight)
@@ -108,7 +108,7 @@ window.addEventListener('load', function () {
       this.context.textBaseline = 'middle'
       this.context.lineWidth = 1
       this.context.fontStyle = 'normal '
-      this.context.fontWeight = '600 '
+      this.context.fontWeight = '400 '
       this.context.font =
         this.context.fontStyle +
         this.context.fontWeight +

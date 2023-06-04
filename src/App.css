@@ -114,7 +114,9 @@ body {
     opacity: 0.05;
   }
 }
-
+.work-header-box {
+  z-index: 1;
+}
 .hero-text {
   padding: 0 1vw;
   justify-content: flex-end;
