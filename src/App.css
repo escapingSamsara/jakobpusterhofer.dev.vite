@@ -112,6 +112,7 @@ body {
     opacity: 0.05;
   }
 }
+
 .hero-text {
   padding: 0 1vw;
   justify-content: flex-end;
@@ -157,8 +158,6 @@ body {
 .section {
   height: 100%;
   width: 100%;
-  /* padding: 12vh 4vw 1vh; */
-  /* border: 1px solid pink; */
   display: flex;
   justify-content: center;
   align-items: center;

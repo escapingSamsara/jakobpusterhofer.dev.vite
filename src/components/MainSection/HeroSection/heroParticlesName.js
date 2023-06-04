@@ -100,15 +100,15 @@ window.addEventListener('load', function () {
         this.canvasHeight
       )
 
-      gradient.addColorStop(0.2, 'grey')
-      gradient.addColorStop(0.5, 'grey')
-      gradient.addColorStop(0.8, 'grey')
-      this.context.fillStyle = gradient
+      gradient.addColorStop(0.2, 'slategrey')
+      gradient.addColorStop(0.5, 'slategrey')
+      gradient.addColorStop(0.8, 'slategrey')
+      this.context.fillStyle = '#01ABB4'
       this.context.textAlign = 'left'
       this.context.textBaseline = 'middle'
       this.context.lineWidth = 1
       this.context.fontStyle = 'normal '
-      this.context.fontWeight = '400 '
+      this.context.fontWeight = '600 '
       this.context.font =
         this.context.fontStyle +
         this.context.fontWeight +

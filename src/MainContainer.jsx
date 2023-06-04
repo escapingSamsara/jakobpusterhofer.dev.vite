@@ -76,7 +76,6 @@ export default function MainContainer({ theme, toggleTheme }) {
             <div className="section-content">
               <HeroSection theme={theme} />
             </div>
-            {/* <div className="section-header-box"></div> */}
           </div>
           <div className="panel section-container">
             {' '}
