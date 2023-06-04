@@ -57,10 +57,10 @@ window.addEventListener('load', function () {
       this.maxTextWidth = this.canvasWidth * 0.6
       if (canvasNameHeader.clientWidth >= canvasNameHeader.clientHeight) {
         this.fontSize =
-          (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 50
+          (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 40
       } else if (canvasNameHeader.clientHeight > canvasNameHeader.clientWidth) {
         this.fontSize =
-          (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 70
+          (canvasNameHeader.clientWidth / canvasNameHeader.clientHeight) * 45
       }
       console.log(this.fontSize)
       this.lineHeight = this.fontSize * 1.15

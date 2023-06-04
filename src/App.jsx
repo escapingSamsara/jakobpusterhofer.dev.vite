@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import './App.css'
 import MainContainer from './MainContainer'
 export default function App() {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('dark')
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark')
