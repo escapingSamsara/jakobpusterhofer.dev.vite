@@ -19,7 +19,7 @@ export default function App() {
   }, [theme])
   return (
     <div className={`App ${theme}`}>
-      {/* <ToastContainer
+      <ToastContainer
         position="bottom-left"
         autoClose={5000}
         hideProgressBar={false}
@@ -30,7 +30,7 @@ export default function App() {
         draggable
         pauseOnHover
         theme="light"
-      /> */}
+      />
       <MainContainer theme={theme} toggleTheme={toggleTheme} />
     </div>
   )

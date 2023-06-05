@@ -1,65 +1,84 @@
 import emailjs from '@emailjs/browser'
-import { useRef } from 'react'
+import { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { toast } from 'react-toastify'
 
 export const ContactForm = ({ theme }) => {
-  const form = useRef()
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [recaptcha, setRecaptcha] = useState(null)
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
-
+    if (name && message && email && !recaptcha) {
+      toast.error('Please verify you are not a robot.')
+      return
+    }
+    if (!name || !email || !message) {
+      toast.error('Please fill out all fields.')
+      return
+    }
+    // emailjs send function which takes the service ID, template ID and variables as arguments
     emailjs
-      .sendForm(
-        'service_h7rg8vg',
-        'template_wc9bwcj',
-        form.current,
-        'zNxumeuk9MjEZai2h'
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        { name, email, message },
+        import.meta.env.VITE_EMAILJS_USER_ID
       )
       .then(
         (result) => {
-          console.log(result.text)
+          toast.success('Message sent, thank you for contacting me.')
+          setName('')
+          setEmail('')
+          setMessage('')
+          setRecaptcha(null)
         },
         (error) => {
-          console.log(error.text)
+          toast.error('An error occurred, please try again.')
         }
       )
   }
 
   return (
     <>
-      <form ref={form} onSubmit={sendEmail} className="contact-form">
+      <form onSubmit={handleSubmit} className={`contact-form ${theme}`}>
         <input
+          onChange={(e) => setName(e.target.value)}
           placeholder="Name"
-          required
+          value={name}
           type="text"
           name="user_name"
           className={`user-input-name textfield ${theme}`}
         />
         <input
-          placeholder="Email"
-          required
           type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
           name="user_email"
           className={`user-input-email textfield ${theme}`}
         />
         <textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           placeholder="Message"
           name="message"
-          required
           className={`user-input-message textfield ${theme}`}
         />
-        <input
-          type="submit"
-          value="Send"
-          disabled
-          className={`form-send-btn ${theme}`}
-        />
+        <div className="captcha-btn-box">
+          <ReCAPTCHA
+            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+            onChange={setRecaptcha}
+          />
+          <input
+            type="submit"
+            value="Send"
+            className={`form-send-btn ${theme}`}
+          />
+        </div>
       </form>
-      {/* <ReCAPTCHA
-        sitekey={CAPTCHA_SITE_KEY}
-        onChange={sendEmail}
-        className="recaptcha"
-      /> */}
     </>
   )
 }

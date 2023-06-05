@@ -4,45 +4,67 @@
 .contact-container {
   width: 100%;
   height: 100%;
-  display: flex;
 }
 .contact-box {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 .contact-form-box {
   display: flex;
   height: 100%;
-  width: 100%;
-  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.contact-socials-box {
+  display: flex;
+  height: 100%;
+  width: 50%;
   align-items: center;
   justify-content: center;
 }
 
 .contact-form {
+  background: transparent;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
   z-index: 20;
-  height: 100%;
   min-width: 300px;
-  width: 380px;
-  max-width: 50vw;
+  width: 350px;
+  margin-top: 1.25rem;
+  height: 520px;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   flex-direction: column;
-  padding-top: 15vh;
+}
+.contact-form.dark {
+  backdrop-filter: blur(5px);
+  background-color: #ffffff0b;
+}
+.contact-form.light {
+  backdrop-filter: blur(5px);
+  background-color: #ffffff0d;
 }
 .textfield {
-  margin: 0.75rem 0 1rem;
-  padding: 0.35rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   font-size: 1rem;
   border: none;
-  height: 2rem;
+  height: 2.5rem;
   border-radius: 5px;
+  resize: none;
+  width: 302px;
+  border: 3px solid transparent;
+  outline: none;
 }
-.recaptcha {
-  z-index: 20;
+.textfield:focus {
+  outline: none;
+  border: 3px solid #00adb5;
 }
-
 .form-send-btn {
-  width: 100px;
+  width: 100%;
   margin: 1rem auto;
   padding: 0.75rem 0;
   font-weight: bold;
@@ -71,6 +93,11 @@
 input {
   border-radius: 5px;
 }
+.user-input-message {
+  resize: none;
+  height: 150px;
+  overflow-y: scroll;
+}
 .textfield.dark {
   background-color: #ffffff;
   color: black;
@@ -78,4 +105,10 @@ input {
 }
 .textfield.light {
   background-color: #ffffff;
+}
+.captcha-btn-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
