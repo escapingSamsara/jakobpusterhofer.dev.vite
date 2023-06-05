@@ -17,7 +17,7 @@ const ContactSocials = ({ theme }) => {
           {contactSocialsList.map((socialsListItem) => {
             const { id, name, link, icon } = socialsListItem
             return (
-              <a href={link} key={id}>
+              <a href={link} key={id} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={icon}
                   className={`contact-socials-list-item  ${(name, theme)}`}
@@ -28,12 +28,20 @@ const ContactSocials = ({ theme }) => {
         </ul>
       </div>
       <div className="fiverr-contact">
-        <button className={`fiverr-cta-btn ${theme}`} type="button">
-          <h4 className="fiverr-cta-text">Hire me on fiverr!</h4>
-          <div className={`fiverr-icon-box ${theme}`}>
-            <img src={fiverrIcon} className="fiverr-logo" alt="fiverr logo" />
-          </div>
-        </button>
+        {' '}
+        <a
+          href="https://www.fiverr.com/escapinsamsara?up_rollout=true"
+          className={`fiverr-cta-btn ${theme}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className={`fiverr-cta-btn ${theme}`} type="button">
+            <h4 className="fiverr-cta-text">Hire me on fiverr!</h4>
+            <div className={`fiverr-icon-box ${theme}`}>
+              <img src={fiverrIcon} className="fiverr-logo" alt="fiverr logo" />
+            </div>{' '}
+          </button>
+        </a>
       </div>
     </div>
   )
