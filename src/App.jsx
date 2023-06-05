@@ -20,7 +20,7 @@ export default function App() {
   return (
     <div className={`App ${theme}`}>
       <ToastContainer
-        position="bottom-left"
+        position="bottom-center"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
