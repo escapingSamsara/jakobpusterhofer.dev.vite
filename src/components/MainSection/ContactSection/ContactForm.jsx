@@ -22,10 +22,10 @@ export const ContactForm = ({ theme }) => {
     // emailjs send function which takes the service ID, template ID and variables as arguments
     emailjs
       .send(
-        import.meta.env.production.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.production.VITE_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         { name, email, message },
-        import.meta.env.production.VITE_EMAILJS_USER_ID
+        import.meta.env.VITE_EMAILJS_USER_ID
       )
       .then(
         (result) => {
@@ -69,7 +69,7 @@ export const ContactForm = ({ theme }) => {
         />
         <div className="captcha-btn-box">
           <ReCAPTCHA
-            sitekey={import.meta.env.production.VITE_RECAPTCHA_SITE_KEY}
+            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
             onChange={setRecaptcha}
           />
           <input
