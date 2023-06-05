@@ -21,7 +21,7 @@
 }
 .contact-socials-text {
   height: 60%;
-  width: 70%;
+  width: 80%;
   display: flex;
   text-align: justify;
   align-items: flex-end;
@@ -68,7 +68,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 6.5rem;
+  padding-top: 6.75rem;
 }
 .fiverr-cta-btn {
   display: flex;
@@ -121,4 +121,60 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+
+@media all and (max-width: 600px) {
+  .contact-socials-list-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-socials-list {
+    width: 80%;
+  }
+  .contact-socials-text {
+    width: 80%;
+  }
+  .socials-cta-text {
+    width: 100%;
+    line-height: 1.25rem;
+    font-size: 1.15rem;
+  }
+  .fiverr-contact {
+    padding-top: 0;
+    width: 304px;
+  }
+}
+@media all and (max-width: 800px) {
+  .contact-socials-list-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-socials-list {
+    width: 90%;
+  }
+
+  .contact-socials-text {
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+  .socials-cta-text {
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    line-height: 1.25rem;
+    font-size: 1.15rem;
+  }
+  .fiverr-contact {
+    padding-top: 1.25rem;
+    width: 250px;
+  }
 }

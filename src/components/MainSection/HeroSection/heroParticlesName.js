@@ -113,7 +113,7 @@ window.addEventListener('load', function () {
         this.context.fontStyle +
         this.context.fontWeight +
         this.fontSize +
-        'px system-ui'
+        'px Lobster'
       // break multiline text
       let linesArray = []
       let words = text.split('\n')
