@@ -21,7 +21,7 @@
 }
 .contact-socials-text {
   height: 60%;
-  width: 80%;
+  width: 73.5%;
   display: flex;
   text-align: justify;
   align-items: flex-end;
@@ -60,7 +60,6 @@
   transition: all 0.2s;
 }
 .fiverr-contact {
-  height: 40%;
   margin: 0 auto;
   width: 304px;
   z-index: 10;
@@ -68,7 +67,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 6.75rem;
 }
 .fiverr-cta-btn {
   display: flex;
