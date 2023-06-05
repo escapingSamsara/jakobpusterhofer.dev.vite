@@ -9,6 +9,11 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    env:
+      VITE_RECAPTCHA_SITE_KEY: '6LfH4WMmAAAAAH5ANJe0FwOOVTGUtSFwcnKhD_x8'
+      VITE_EMAILJS_SERVICE_ID: 'service_h7rg8vg'
+      VITE_EMAILJS_TEMPLATE_ID: 'template_wc9bwcj'
+      VITE_EMAILJS_USER_ID: 'qzWCOFYnCvVa2LRcY'
 
     steps:
       - name: Checkout repo
