@@ -74,7 +74,8 @@ export default function MainContainer({ theme, toggleTheme }) {
         <div ref={slider} className="container">
           <div className="panel  section-container ">
             <div className="section-content hero-section-container">
-              <HeroSection theme={theme} />
+              {/* <HeroSection theme={theme} /> */}
+              <div className="hero-text"></div>
             </div>
           </div>
           <div className="panel section-container">
