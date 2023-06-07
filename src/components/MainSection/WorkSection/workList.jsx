@@ -28,15 +28,6 @@ export const workList = [
   },
   {
     id: 4,
-    title: 'cryptonic.wallet',
-    link: '#',
-    description: 'crypto wallet landing page',
-    tech: 'react.js',
-    code: '#',
-    image: 'workListImages/cryptonic_wallet.png',
-  },
-  {
-    id: 5,
     title: 'Lor3mPixum',
     link: 'https://escapingsamsara.github.io/lor3mPixum/',
     description: 'pixel game dev company portfolio',
@@ -45,7 +36,7 @@ export const workList = [
     image: 'workListImages/lor3mPixum.png',
   },
   {
-    id: 6,
+    id: 5,
     title: 'todo or not todo?',
     link: 'https://github.com/escapingSamsara/todo-list-react',
     description: 'todo list widget for aesthetes',
