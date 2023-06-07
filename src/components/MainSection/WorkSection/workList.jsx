@@ -47,10 +47,10 @@ export const workList = [
   {
     id: 6,
     title: 'todo or not todo?',
-    link: 'https://escapingsamsara.github.io/TodoList_Widget/',
+    link: 'https://github.com/escapingSamsara/todo-list-react',
     description: 'todo list widget for aesthetes',
     tech: 'react.js',
-    code: 'https://github.com/escapingSamsara/TodoList_Widget',
+    code: 'https://escapingsamsara.github.io/todo-list-react/',
     image: 'workListImages/todoOrNotTodo.png',
   },
 ]
