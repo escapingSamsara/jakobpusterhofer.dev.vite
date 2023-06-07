@@ -19,15 +19,6 @@ export const workList = [
   },
   {
     id: 3,
-    title: 'cloudstash',
-    link: '#',
-    description: 'crypto wallet landing page',
-    tech: 'react.js',
-    code: '#',
-    image: 'workListImages/cloudstash_wallet.png',
-  },
-  {
-    id: 4,
     title: 'Lor3mPixum',
     link: 'https://escapingsamsara.github.io/lor3mPixum/',
     description: 'pixel game dev company portfolio',
@@ -36,7 +27,7 @@ export const workList = [
     image: 'workListImages/lor3mPixum.png',
   },
   {
-    id: 5,
+    id: 4,
     title: 'todo or not todo?',
     link: 'https://github.com/escapingSamsara/todo-list-react',
     description: 'todo list widget for aesthetes',
